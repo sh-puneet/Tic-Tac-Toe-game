@@ -1,6 +1,5 @@
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset");
-let newBtn = document.querySelector("#newGame");
 let win = document.querySelector("#winnerTag");
 let msgDisplay = document.querySelector("#hide");
 
@@ -71,17 +70,6 @@ const checkWinner = ()=>{
 
 // Reset button
 resetBtn.addEventListener("click", ()=>{
-    msgDisplay.style.display  = "none";
-    for(box of boxes)
-    {
-        box.innerText = "";
-        box.disabled = false;
-        turn0 = true;
-    }
-});
-
-// New Button
-newBtn.addEventListener("click", ()=>{
     msgDisplay.style.display  = "none";
     for(box of boxes)
     {
